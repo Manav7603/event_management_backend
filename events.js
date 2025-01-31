@@ -7,7 +7,7 @@ const events= [
         date: "March 10, 2025",
         location: "Bangalore",
         numberOfParticipants: 5000,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=286"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const events= [
         date: "February 20, 2025",
         location: "Mumbai",
         numberOfParticipants: 1500,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=286"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const events= [
         date: "April 15, 2025",
         location: "Delhi",
         numberOfParticipants: 2000,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=286"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const events= [
         date: "December 15, 2024",
         location: "Hyderabad",
         numberOfParticipants: 1200,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&w=286"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const events= [
         date: "March 5, 2025",
         location: "Pune",
         numberOfParticipants: 800,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=286"
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const events= [
         date: "March 25, 2025",
         location: "Kolkata",
         numberOfParticipants: 2500,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1556911261-6bd8deef2b34?auto=format&fit=crop&w=286"
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const events= [
         date: "January 5, 2025",
         location: "Jaipur",
         numberOfParticipants: 600,
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=286"
     },
     {
         id: 9,
@@ -87,8 +87,9 @@ const events= [
         date: "April 5, 2025",
         location: "Goa",
         numberOfParticipants: 300,
-        image: "https://images.unsplash.com/photo-1504198458649-d4e9c97e6f0b?auto=format&fit=crop&w=286"
+        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=286"
     },
+
     {
         id: 10,
         title: "Tech Fest 2025",
