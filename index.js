@@ -11,6 +11,10 @@ app.use(cors({
     credentials: true
 }));
 
+app.get('/', (req, res) => {
+    // console.log(events)
+    res.send('<h1> Hello from Backend!! </h1>');
+})
 
 app.get('/events', (req, res) => {
     // console.log(events)
