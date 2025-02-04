@@ -1,31 +1,29 @@
-const express = require("express");
 const cors = require("cors");
-const { events } = require("./events");
-const { allEventsData } = require("./allEventsData");
-const app = express();
+const { events } = require("../events");
+const { allEventsData } = require("../allEventsData");
 
-app.use(cors({
-    origin: ['http://localhost:5173', 'https://eventlyworld.vercel.app'],
+const corsMiddleware = cors({
+    origin: ['http://localhost:5173', 'https://event-management-backend-mauve.vercel.app/'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
-}));
+});
 
-app.get('/', (req, res) => {
-    // console.log(events)
-    res.send('<h1> Hello from Backend!! </h1>');
-})
+module.exports = (req, res) => {
+    return new Promise((resolve, reject) => {
+        corsMiddleware(req, res, async () => {
+            if (req.method === "GET") {
+                if (req.url === "/events") {
+                    return res.json(events);
+                }
+                if (req.url === "/participants") {
+                    return res.json(allEventsData);
+                }
+                return res.send("<h1> Hello from Backend!! </h1>");
+            }
 
-app.get('/events', (req, res) => {
-    // console.log(events)
-    res.json(events)
-})
-
-app.get('/participants', (req, res) => {
-    // console.log(allEventsData)
-    res.json(allEventsData)
-})
-
-app.listen(5000, () => {
-    console.log("Server is listening at port - 5000");
-})
+            res.status(405).json({ error: "Method Not Allowed" });
+            resolve();
+        });
+    });
+};
