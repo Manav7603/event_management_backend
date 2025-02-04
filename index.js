@@ -1,6 +1,6 @@
 const cors = require("cors");
-const { events } = require("../events");
-const { allEventsData } = require("../allEventsData");
+const { events } = require("./events");
+const { allEventsData } = require("./allEventsData");
 
 const corsMiddleware = cors({
     origin: ['http://localhost:5173', 'https://event-management-backend-mauve.vercel.app/'],
