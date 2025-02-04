@@ -3,7 +3,7 @@ const { events } = require("./events");
 const { allEventsData } = require("./allEventsData");
 
 const corsMiddleware = cors({
-    origin: ['http://localhost:5173', 'https://event-management-frontend-lemon.vercel.app/'],
+    origin: ['http://localhost:5173', 'https://event-management-frontend-lemon.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
